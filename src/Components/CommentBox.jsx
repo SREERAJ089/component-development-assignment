@@ -75,6 +75,7 @@ export default function CommentBox({ closeDialog }) {
                 </button>
             </div>
 
+            {/* Comment Section */}
             <div className="mt-4 max-h-[160px] overflow-y-auto space-y-4 scrollbar-hide">
                 {data.map((comment) => (
                     <div key={comment.id} className="mt-4">
@@ -96,6 +97,7 @@ export default function CommentBox({ closeDialog }) {
                 ))}
             </div>
 
+            {/* Comment Input Section */}    
             <div className="flex flex-col p-2 bg-gray-100 rounded-lg mt-4">
                 <textarea
                     placeholder="Enter comment"
