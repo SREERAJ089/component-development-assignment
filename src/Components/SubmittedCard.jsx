@@ -67,9 +67,9 @@ export default function SubmittedCard({ data, deleteComment }) {
                                 <FiEye className="text-gray-600" />
                             </button>
 
-                            <button 
-                            className="border border-gray-300 rounded-md p-2 hover:bg-gray-100"
-                            onClick={handleDownloadFile}
+                            <button
+                                className="border border-gray-300 rounded-md p-2 hover:bg-gray-100"
+                                onClick={handleDownloadFile}
                             >
                                 <FiDownload className="text-gray-600" />
                             </button>
@@ -89,7 +89,10 @@ export default function SubmittedCard({ data, deleteComment }) {
                         Delete Comment
                     </button>
 
-                    <button className="text-white px-5 py-2 rounded-full bg-orange-500">
+                    <button
+                        className="text-white px-5 py-2 rounded-full bg-orange-500"
+                        onClick={deleteComment}
+                    >
                         Edit Comment
                     </button>
                 </div>
