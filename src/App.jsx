@@ -19,6 +19,7 @@ export default function App() {
       comment: formData.comment,
       fileName: formData.fileName,
       fileSize: formData.fileSize,
+      file: formData.file
     });
     setSubmitted(true);
   }

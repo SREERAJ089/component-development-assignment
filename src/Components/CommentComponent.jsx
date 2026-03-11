@@ -6,10 +6,12 @@ export default function CommentComponent({ currentValue, onSubmit }) {
   const [comment, setComment] = useState("");
   const [fileName, setFileName] = useState("");
   const [fileSize, setFileSize] = useState("");
+  const [file, setFile] = useState(null);
 
   const handleFileChange = (e) => {
     if (e.target.files.length > 0) {
       setFileName(e.target.files[0].name);
+      setFile(e.target.files[0]);
       setFileSize((e.target.files[0].size / 1024 / 1024).toFixed(2) + " MB");
     }
   };
@@ -28,6 +30,7 @@ export default function CommentComponent({ currentValue, onSubmit }) {
       comment,
       fileName,
       fileSize,
+      file
     });
   };
 
